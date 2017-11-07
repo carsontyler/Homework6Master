@@ -156,17 +156,18 @@ TEST_CASE("Testing SuperArray class with super range")
         REQUIRE_THROWS_WITH(sa[19], "Invalid index request, too high");
     }*/
 }
-/*
+
 TEST_CASE("Testing SuperArray class Resize Feature")
 {
-    INFO("Testing SuperArray class with super range");
+    /*INFO("Testing SuperArray class with super range");
     int low = 5;
     int high = 15;
     SuperArray sa(low, high);
     for (int i = low; i < high; i++)
     {
         sa[i] = i + 100;
-     }
+    }
+
     // Test Resize now
     low = 3;
     high = 15;
@@ -192,6 +193,7 @@ TEST_CASE("Testing SuperArray class Resize Feature")
         REQUIRE(sa[5] == 105);
         REQUIRE(sa[14] == 114);
 	}
+
     // Update values and test them
     sa[3] = 1;
     sa[14] = 2;
@@ -211,8 +213,9 @@ TEST_CASE("Testing SuperArray class Resize Feature")
  	{
 	    INFO("Test #21 Test valid index member (too high) FAILED");
 		REQUIRE_THROWS_WITH(sa[19], "Invalid index request, too high");
-	}
+	}*/
 }
+/*
 TEST_CASE("Testing SuperArray class Resize Feature Negative Index")
 {
     INFO("Testing SuperArray class Resize Feature Negative Index");
