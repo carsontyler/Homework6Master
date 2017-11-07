@@ -69,7 +69,7 @@ TEST_CASE("Testing SuperArray class Regular indexes")
 	for (int i = low; i < high - low; i++)
 	{
 		sa[i] = i + 20;
-	}/*
+	}
 	SECTION("Test #1) Test Constructor")
     {
         INFO("Test #1) Test Constructor FAILED");
@@ -94,7 +94,7 @@ TEST_CASE("Testing SuperArray class Regular indexes")
 	{
 	    INFO("Test #5) Test valid index member FAILED");
 		REQUIRE(sa[0] == 20);
-	}
+	}/*
     // This test requires to test an exception 
 	SECTION("Test #6) Test invalid index members (too low)")
 	{
@@ -107,7 +107,7 @@ TEST_CASE("Testing SuperArray class Regular indexes")
 		REQUIRE_THROWS_WITH(sa[9], "Invalid index request, too high");
 	}*/
 }
-/*
+
 TEST_CASE("Testing SuperArray class with super range")
 {
     INFO("Testing SuperArray class with super range");
@@ -143,7 +143,7 @@ TEST_CASE("Testing SuperArray class with super range")
     {
         INFO("Test #12) Test valid index member FAILED");
         REQUIRE(sa[8] == 108);
-    }
+    }/*
     // This test requires to test an exception
     SECTION("Test #13) Test invalid index members (too low)")
     {
@@ -154,8 +154,9 @@ TEST_CASE("Testing SuperArray class with super range")
     {
         INFO("Test #14 Test valid index member (too high) FAILED");
         REQUIRE_THROWS_WITH(sa[19], "Invalid index request, too high");
-    }
+    }*/
 }
+/*
 TEST_CASE("Testing SuperArray class Resize Feature")
 {
     INFO("Testing SuperArray class with super range");
@@ -351,4 +352,6 @@ TEST_CASE("Testing SuperArray 1 element")
         INFO("Test #39) Test valid index member (too high) FAILED");
         REQUIRE_THROWS_WITH(sa[4], "Invalid index request, too high");
     }
-}*/
+}
+
+ */
