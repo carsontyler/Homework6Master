@@ -159,7 +159,8 @@ TEST_CASE("Testing SuperArray class with super range")
 
 TEST_CASE("Testing SuperArray class Resize Feature")
 {
-    /*INFO("Testing SuperArray class with super range");
+    /*
+    INFO("Testing SuperArray class with super range");
     int low = 5;
     int high = 15;
     SuperArray sa(low, high);
@@ -215,10 +216,10 @@ TEST_CASE("Testing SuperArray class Resize Feature")
 		REQUIRE_THROWS_WITH(sa[19], "Invalid index request, too high");
 	}*/
 }
-/*
+
 TEST_CASE("Testing SuperArray class Resize Feature Negative Index")
 {
-    INFO("Testing SuperArray class Resize Feature Negative Index");
+    /*INFO("Testing SuperArray class Resize Feature Negative Index");
     int low = 5;
     int high = 15;
     SuperArray sa(low, high);
@@ -272,7 +273,7 @@ TEST_CASE("Testing SuperArray class Resize Feature Negative Index")
     {
         INFO("Test #28 Test valid index member (too high) FAILED");
         REQUIRE_THROWS_WITH(sa[25], "Invalid index request, too high");
-    }
+    }*/
 }
 TEST_CASE("Testing SuperArray Offseting array")
 {
@@ -303,7 +304,7 @@ TEST_CASE("Testing SuperArray Offseting array")
 	{
 	    INFO("Test #32) Test length FAILED");
 		REQUIRE(sa.length() == 4);
-	}
+	}/*
     // This test requires to test an exception 
 	SECTION("Test #33) Test invalid index members (too low)")
 	{
@@ -314,7 +315,7 @@ TEST_CASE("Testing SuperArray Offseting array")
  	{
 	    INFO("Test #34) Test valid index member (too high) FAILED");
 		REQUIRE_THROWS_WITH(sa[0], "Invalid index request, too high");
-	}
+	}*/
 }
 TEST_CASE("Testing SuperArray 1 element")
 {
@@ -343,7 +344,7 @@ TEST_CASE("Testing SuperArray 1 element")
     { 
         INFO("Test #37) Test length FAILED");
         REQUIRE(sa.length() == 1);
-    }
+    }/*
     // This test requires to test an exception 
     SECTION("Test #38) Test invalid index members (too low)")
     {
@@ -354,7 +355,5 @@ TEST_CASE("Testing SuperArray 1 element")
     {
         INFO("Test #39) Test valid index member (too high) FAILED");
         REQUIRE_THROWS_WITH(sa[4], "Invalid index request, too high");
-    }
+    }*/
 }
-
- */

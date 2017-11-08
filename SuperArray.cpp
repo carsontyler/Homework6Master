@@ -78,9 +78,6 @@ int &SuperArray::operator[](const int index)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
 /*!
  * Class Destructor
  */
@@ -88,7 +85,6 @@ SuperArray::~SuperArray()
 {
     delete[] arr;
 }
-
 
 /*!
  * Convert int array to string.
