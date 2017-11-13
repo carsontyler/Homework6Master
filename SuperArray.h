@@ -19,7 +19,7 @@ private:
 	int capacity;	// array capacity
 
 public:
-	//class OptIndexEx{};		// Exception class for operator
+	class OptIndexEx{};		// Exception class for operator
 	SuperArray(const int begIndex, const unsigned int capacity);
 	virtual ~SuperArray(); /* destructor */
 
@@ -28,7 +28,7 @@ public:
 	int getHighIndex() const;
 
 	unsigned int length() const;
-	//void resize(const int begIndex, const unsigned int capacity);
+	void resize(const int begIndex, const unsigned int capacity2);
 
 	int &operator[](const int index);
 	friend string arrayToString(const SuperArray& s);
