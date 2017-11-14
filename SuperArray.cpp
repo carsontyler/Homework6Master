@@ -108,17 +108,11 @@ void SuperArray::resize(const int begIndex, const unsigned int capacity2)
 
     int templow = lowIndex, tempHigh = highIndex;
     templow = (lowIndex-(begIndex));
-    tempHigh = (highIndex-(begIndex));
 
     for(int i = 0; i < lowIndex; i++)
     {
         *(p+i) = 0;
     }
-    for(int i = tempHigh; i < begIndex + capacity2 -1; i++)
-    {
-        *(p+i) = 0;
-    }
-
 
     for(int i = 0; i < SuperArray::capacity; i++)
     {
